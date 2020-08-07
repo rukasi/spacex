@@ -1,0 +1,253 @@
+*, h1, h2, p, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #010001;
+    padding-top: 53px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
+.header {
+    max-width: 1230px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.item-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.secondary-nav .item-link {
+    color: #808080;
+}
+
+.main {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+}
+
+.description {
+    max-width: 268px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.description:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 59px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 26px;
+}
+
+.video {
+    max-width: 1230px;
+    height: 650px;
+    width: 90%;
+    margin: auto;
+}
+
+.features {
+    max-width: 1230px;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    position: relative;
+}
+
+.features-title {
+    max-width: 177px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.table {
+    margin-bottom: 207px;
+}
+
+.table-column {
+    width: 300px;
+    padding-bottom: 11px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 179.69%;
+    color: #FFFFFF;
+}
+
+.features-text {
+    max-width: 490px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.rocket {
+    width: 260px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 1;
+}
+
+.footer{
+    padding: 130px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    padding-top: 44px;
+    padding-bottom: 28px;
+}
+
+.footer-nav .item-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #808080;
+    padding-bottom: 30px;
+}
+
+.footer-link {
+    color: #808080;
+    text-decoration: none;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    min-width: 260px;
+    padding: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+    .rocket {
+        width: 200px;
+        right: 0;
+    }
+    .table-column {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .logo {
+        margin-bottom: 20px;
+    }
+
+    .header .main-nav {
+        margin-bottom: 20px;
+    }
+    .rocket {
+        width: 165px;
+    }
+    .video {
+        max-width: 100%;
+        height: 330px;
+    }
+}
+
+@media (max-width: 576px) {
+    .rocket {
+        position: static;
+        margin-bottom: 30px;
+        
+    }
+    .table {
+        margin-bottom: 0;
+    }
+    .table-column {
+        font-size: 14px;
+        width: 150px;
+    }
+    .footer-nav .list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-nav .item {
+        margin-bottom: 10px;
+    }
+    .footer {
+        padding: 50px 0;
+        text-align: center;
+    }
+    .main {
+        padding-top: 50px;
+    }
+}
